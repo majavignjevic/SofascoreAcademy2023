@@ -1,0 +1,130 @@
+@media screen and (min-width: 601px) {
+    body{
+        margin: 0 auto;
+        width: 100%;
+        background-color: #7593D4;
+        color: #3F463E;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: medium;
+    }
+    .sec{
+        background-color: #4A6E8B;
+        color: #DCD8CF;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .logo{
+        display: flex;
+        flex: 30%;
+    }
+    .box{
+        margin: 0 auto;
+        border: 3px solid #3F463E;
+        background-color: #7593D4;
+        width: 100px;
+        height: 100px;
+        margin-left: 30%;
+    }
+    .circle{
+        border: 3px solid #3F463E;
+        border-radius: 50px;
+        width: 97px;
+        height: 97px;
+        margin: 0 auto;
+        background-color: #7593D4;
+    }
+    .m{
+        font-size: 48px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+        line-height: 72%;
+        margin-top: 16%;
+    }
+    .nav{
+        display: flex;
+        font-size: large;
+        text-align: center;
+        flex: 50%;
+    }
+    .item{
+        flex: 10%;
+    }
+    button{
+        height: 99%;
+        width: 99%;
+        background-color: #4A6E8B;
+        color: #DCD8CF;
+        border: none;
+        font-size: larger;
+    }
+    button:hover{
+        background-color: #DCD8CF;
+        color: #4A6E8B;
+    }  
+}
+@media  screen and (max-width: 600px) {
+    body{
+        margin: 0 auto;
+        background-color: #7593D4;
+        color: #DCD8CF;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: medium;
+    }
+    .logo{
+        width: 100%;
+        background-color: #4A6E8B;
+    }
+    .box{
+        margin: 0 auto;
+        border: 3px solid #3F463E;
+        background-color: #7593D4;
+        width: 80px;
+        height: 80px;
+        margin-left: 10%;
+    }
+    .circle{
+        border: 3px solid #3F463E;
+        border-radius: 50px;
+        width: 77px;
+        height: 77px;
+        margin: 0 auto;
+        background-color: #7593D4;
+    }
+    .m{
+        font-size: 40px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+        line-height: 72%;
+        margin-top: 16%;
+    }
+    .sec{
+        background-color: #7593D4;
+    }
+    .nav{
+        background-color: #4A6E8B;
+        color: #DCD8CF;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        height: 11%;
+    }
+
+    .item{
+        flex:10%
+    }
+    button{
+        height: 99%;
+        width: 99%;
+        background-color: #4A6E8B;
+        color: #DCD8CF;
+        border: none;
+        font-size: large;
+    }
+    button:hover{
+        background-color: #DCD8CF;
+        color: #4A6E8B;
+    }
+}
