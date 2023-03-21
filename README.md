@@ -1,2 +1,2 @@
 # SofascoreAcademy2023
-My repo for the homework. 
+My homework repository for the Sofascore Frontend Academy 2023
