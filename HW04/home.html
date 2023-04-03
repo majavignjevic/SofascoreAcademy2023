@@ -43,12 +43,13 @@
                         const divPicture = '<div class="pokemonPic" id="first">' + 
                                         ' <img src="' + imgURL + 
                                         '" alt="pokemon ran away :( sit tight we are catchin him again"/></div>'
-                        const divName ='<div class="name" id="name" data-toggle="popover" title="' 
-                        + pokeName + '" data-placement="right" data-content="base_experience: '+ baseExperience +
-                        ', weight: ' + weight + ', height: '+ height +'.">' + pokeName + '</div>'
-                        const button = '<input type="button" id="'+ i + '" value="Hide me!" onclick="hideMe(' + i +')">'
+                        const divName ='<div class="name" id="name" '
+                        const popover = 'data-toggle="popover" title="' + pokeName + 
+                                        '" data-placement="right" data-content="base_experience: '+ baseExperience +
+                                        ', weight: ' + weight + ', height: '+ height +'.">' + pokeName 
+                        const button = ' </div> <input type="button" id="'+ i + '" value="Hide me!" onclick="hideMe(' + i +')">'
 
-                        const newDiv=divItem + divPicture + divName + button + "</div>"
+                        const newDiv=divItem + divPicture + divName + popover +  button + "</div>"
 
                         mainDiv.innerHTML += newDiv
                     }
