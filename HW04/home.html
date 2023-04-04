@@ -4,12 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" media="screen" href="homeStyle.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script>
         function hideMe(id){
             document.getElementById(id).style.display = "none"
+        }
+        function showAll(){
+            for(let i = 0;i<20;i++){
+                document.getElementById(i).style.display="inline-block"
+            }
+        }
+        function showMoreInfo(id){
+            document.getElementById("moreInfo "+ id).style.display = "inline-block"
+        }
+        function hideExtra(id){
+            document.getElementById("moreInfo "+ id).style.display = "none"
         }
         async function catchThemAll(){
             const link = "https://pokeapi.co/api/v2/pokemon/"
@@ -42,14 +50,12 @@
                         const divItem = '<div class="item" id="' + i + '">'
                         const divPicture = '<div class="pokemonPic" id="first">' + 
                                         ' <img src="' + imgURL + 
-                                        '" alt="pokemon ran away :( sit tight we are catchin him again"/></div>'
-                        const divName ='<div class="name" id="name" '
-                        const popover = 'data-toggle="popover" title="' + pokeName + 
-                                        '" data-placement="right" data-content="base_experience: '+ baseExperience +
-                                        ', weight: ' + weight + ', height: '+ height +'.">' + pokeName 
-                        const button = ' </div> <input type="button" id="'+ i + '" value="Hide me!" onclick="hideMe(' + i +')">'
+                                        '" alt="pokemon ran away :( sit tight we are catchin him again" onclick="showMoreInfo('+i+')" ondblclick="hideExtra('+i+')"/></div>'
+                        const divName ='<div class="name" id="name" <b>' + pokeName + '</b></div>'
+                        const button = '<input type="button" id="'+ i + '" value="Hide me!" onclick="hideMe(' + i +')">'
+                        const popoverDiv = '<div class="moreInfo" id="moreInfo ' + i +'"> Pokemon <b>' + pokeName + '</b> has next atributes:<br/><b>Basic experience:</b> '+ baseExperience + '<br/><b>Weight:</b> ' + weight +'<br/><b>Height:</b> '+ height + '</div>'
 
-                        const newDiv=divItem + divPicture + divName + popover +  button + "</div>"
+                        const newDiv=divItem + divPicture + divName + button + popoverDiv +"</div>"
 
                         mainDiv.innerHTML += newDiv
                     }
@@ -76,6 +82,7 @@
     <footer>
 
         <div class="copyright">
+            <button id="show" onclick="showAll()">Show all</button><br/>
             Page made by: Maja Vignjević
         </div>
     </footer>
