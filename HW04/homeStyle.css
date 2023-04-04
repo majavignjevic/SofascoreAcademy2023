@@ -48,6 +48,17 @@
     .name{
         font-size: large;
     }
+    .moreInfo{
+        display: none;
+        font-size: medium;
+    }
+    #show{
+        width: 40%;
+        height: 20%;
+        color:#0C3348;
+        background-color: #F5F5F5;
+        margin:3%;
+    }
 }
 
 @media  screen and (max-width: 1000px) and (min-width:601px) {
@@ -98,6 +109,15 @@
     .name{
         font-size: large;
     }
+    .moreInfo{
+        display: none;
+    }
+    #show{
+        width: 40%;
+        color:#0C3348;
+        background-color: #F5F5F5;
+        margin:1%;
+    }
 }
 
 @media  screen and (max-width: 600px){
@@ -146,6 +166,15 @@
     }
     .name{
         font-size: large;
+    }
+    .moreInfo{
+        display: none;
+    }
+    #show{
+        width: 40%;
+        color:#0C3348;
+        background-color: #F5F5F5;
+        margin:1%;
     }
 }
 /* 
