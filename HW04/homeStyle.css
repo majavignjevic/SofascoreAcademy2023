@@ -1,0 +1,186 @@
+@media screen and (min-width: 1001px) {
+    body{margin: 0 auto;
+        background-color: #919191 ;
+        color: #0C3348 ;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    header, footer{
+        margin: 0 auto;
+        width: 100%;
+        background-color:  #0C3348;
+        color: #E6BC2F ;
+        padding-top: 0.3rem;
+        padding-bottom: 0.5rem;
+        text-align: center;
+    }
+    .title, .copyright{
+        margin: 0 auto;
+        width: fit-content;
+    }
+    .logo{
+        width: 300px;
+    }
+    .pokemonPic img{
+        width: 100%;
+    }
+    main{
+        margin: 0 auto;
+        width: 70%;
+        background: #F5F5F5  ;
+        justify-content: center;
+        align-items: stretch;
+    }
+    .item{
+        width: 23%;
+        margin: 0.5rem;
+        text-align: center;
+        display: inline-block;
+    }
+    input[type="button"]{
+        border: 1px solid #0C3348;
+        margin: 2%;
+        padding: 2%;
+        background-color: #0C3348;
+        color: #FFCC00;
+        font-weight: bold;
+        width: 40%;
+    }
+    .name{
+        font-size: large;
+    }
+    .moreInfo{
+        display: none;
+        font-size: medium;
+    }
+    #show{
+        width: 40%;
+        height: 20%;
+        color:#0C3348;
+        background-color: #F5F5F5;
+        margin:3%;
+    }
+}
+
+@media  screen and (max-width: 1000px) and (min-width:601px) {
+    body{margin: 0 auto;
+        background-color: #919191 ;
+        color: #0C3348 ;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    header, footer{
+        width: 100%;
+        background-color:  #0C3348;
+        color: #E6BC2F ;
+    }
+    .title, .copyright{
+        margin: 0 auto;
+        width: fit-content;
+    }
+    .logo, .pokemonPic{
+        width: 300px;
+    }
+    .pokemonPic{
+        width: 100%;
+    }
+    main{
+        margin: 0 auto;
+        width: 100%;
+        background: #F5F5F5  ;
+        justify-content: center;
+        align-items: stretch;
+    }
+    .item{
+        width: 27%;
+        margin: 0.5rem;
+        padding-left: 1rem;
+        text-align: center;
+        display: inline-block;
+        box-sizing: content-box;
+    }
+    input[type="button"]{
+        border: 1px solid #0C3348;
+        margin: 2%;
+        padding: 2%;
+        background-color: #0C3348;
+        color: #FFCC00;
+        font-weight: bold;
+        width: 30%;
+    }
+    .name{
+        font-size: large;
+    }
+    .moreInfo{
+        display: none;
+    }
+    #show{
+        width: 40%;
+        color:#0C3348;
+        background-color: #F5F5F5;
+        margin:1%;
+    }
+}
+
+@media  screen and (max-width: 600px){
+    body{margin: 0 auto;
+        background-color: #919191 ;
+        color: #0C3348 ;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    header, footer{
+        width: 100%;
+        background-color:  #0C3348;
+        color: #E6BC2F ;
+    }
+    .title, .copyright{
+        margin: 0 auto;
+        width: fit-content;
+    }
+    .logo, .pokemonPic{
+        width: 300px;
+    }
+    .pokemonPic{
+        width: 100%;
+    }
+    main{
+        margin: 0 auto;
+        width: 100%;
+        background: #F5F5F5  ;
+    }
+    .item{
+        margin: 0 auto;
+        width: 70%;
+        margin: 0.5rem;
+        padding-left: 4rem;
+        text-align: center;
+        display: inline-block;
+        box-sizing: content-box;
+    }
+    input[type="button"]{
+        border: 1px solid #0C3348;
+        margin: 2%;
+        padding: 2%;
+        background-color: #0C3348;
+        color: #FFCC00;
+        font-weight: bold;
+        width: 30%;
+    }
+    .name{
+        font-size: large;
+    }
+    .moreInfo{
+        display: none;
+    }
+    #show{
+        width: 40%;
+        color:#0C3348;
+        background-color: #F5F5F5;
+        margin:1%;
+    }
+}
+/* 
+#CE2211  red 
+#0C3348 darkblue
+#37796C  teal
+#0075BE official blue
+#FFCC00 official yellow
+*/
