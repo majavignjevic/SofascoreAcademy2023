@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  background-color: black;
+  background-image: url("https://t3.ftcdn.net/jpg/02/39/37/74/360_F_239377497_525D25jVLSq4jFue1gkU9fs1tmuOjKpe.jpg");
+  color: white;
+  background-position: top left;
+  background-size: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1{
+  color: greenyellow;
+}
+h5{
+  font-size: normal;
+  color: greenyellow;
+}
+
+.App{
+  margin-top: 10%;
+}
+
+.Option{
+  font-size:14px;
+  background-color: #00000077;
+  color: white;
+  padding: 2%;
+  margin-left: 0.5%;
+}
+.Select{
+  background-color: #00000077;
+  color: white;
+  padding: 1%;
+  margin-left: 0.5%;
+}
+
+.correct {
+  color: yellowgreen;
+}
+
+.wrong {
+  color: crimson;
+}
+
+.SelectText{
+  font-size: 16px;
+  font-weight: bold;
+}
